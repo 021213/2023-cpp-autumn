@@ -4,7 +4,7 @@ enum Gender { MALE = 1, FEMALE = 2, STUDENT = 4 };
 
 int main()
 {
-	Gender g = Gender.MALE;
+	Gender g = MALE;
 	std::cout << g;
 	switch (g)
 	{
