@@ -7,9 +7,9 @@ int main()
 	a[0] = 32;
 	a[1] = 23;
 	a[2] = a[0] + a[1];
-	std::cout << a; //0x????????
-	std::cout << *a; // 32
-	std::cout << *(a + 1) << a[1]; // 23 23
+	std::cout << a << std::endl; //0x????????
+	std::cout << *a << std::endl; // 32
+	std::cout << *(a + 1) << " " << a[1] << std::endl; // 23 23
 	for(int i = 0; i < N; ++i)
 	{
 		a[i] = i;
