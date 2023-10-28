@@ -5,10 +5,12 @@
 int main(int argc, char** argv)
 {
 	srand(time(0));
+
 	int n = 0;
 	scanf_s("%d", &n);
 
 	int* a = (int*)malloc(sizeof(int) * n);
+
 	{
 		for (int i = 0; i < n; ++i)
 		{
@@ -59,7 +61,7 @@ int main(int argc, char** argv)
 		printf("Max = %d\n", max);
 	}
 	{
-		printf("reverse:");
+		printf("reverse: ");
 		for (int i = n - 1; i >= 0; --i)
 		{
 			printf("%d ", *(a + i));
