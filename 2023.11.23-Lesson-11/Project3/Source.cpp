@@ -52,6 +52,13 @@ void hanoy(int count, int from = 1, int to = 3)
 	}
 	else
 	{
+		/*
+		    1	
+	    	2	  1		  1		    1       1
+	    	3	  2		  2		    2       2
+		    4	  3		  3		    3       3
+		. . 5	. 4 5	5 4 .	5 . 4	. 5 4
+		*/
 		hanoy(count - 1, from, to);
 		std::cout << count << " " << from << " " << res << std::endl;
 		hanoy(count - 1, to, from);

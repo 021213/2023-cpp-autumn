@@ -6,6 +6,7 @@ void hanoy(int count, int from = 1, int to = 3)
 	{
 		return;
 	}
+
 	int res = 6 - from - to;
 
 	if (count == 1)
@@ -21,6 +22,18 @@ void hanoy(int count, int from = 1, int to = 3)
 		hanoy(count - 1, from, to);
 	}
 }
+
+/*
+1											1
+2			1					1			2
+3			2     1		  1		2			3
+4		    3     2		  2		3			4
+5 . .	5 . 4	5 3 4	4 3 5	4 . 5	. . 5
+
+1							1
+2 . .   2 . 1   1 . 2   . . 2
+*/
+
 
 int main(int argc, char* argv[])
 {
