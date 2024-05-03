@@ -50,7 +50,6 @@ public:
 	}
 private:
 	Node* root;
-	
 	void dispose(Node*& node)
 	{
 		if (node != nullptr) //if(node)
@@ -60,7 +59,6 @@ private:
 			delete node;
 		}
 	}
-
 	void add(Node*& node, int data)
 	{
 		if (node == nullptr)
@@ -76,7 +74,6 @@ private:
 			add(node->right, data);
 		}
 	}
-
 	void printVerticalTree(std::ostream& stream, Node*& node, int depth = 0)
 	{
 		if (node == nullptr)
